@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        img {
+            height: 200px;
+            /* aspect-ratio: 1; */
+            /* width: 400px; */
+        }
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+         .grid {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding-top: 250px;
+            margin: 0 60px;
+         }
+        
+        /* .hero-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        } */
+         body {
+            background-color: rgb(31, 29, 29);
+            color: white;
+           
+        } 
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 30px;
+            /* background-color: aqua; */
+         
+        }
+        a {
+            height: 40px;
+            width: 161px;
+            text-decoration: none;
+            padding: 7px 12px;
+            font-size: 22px;
+            border: 1px solid white;
+            margin-top: 18px;
+            /* transition */
+            /* transition-property: width ;
+            transition-duration: .8s;
+            transition-timing-function: ease-in;
+            transition-delay: .1s; */
+
+            /* transition: width 2s ease-in 1s; */
+
+            /* transition-property: width,color ;
+            transition-duration: .8s;
+            transition-timing-function: ease-in;
+            transition-delay: .1s; */
+            
+            transition: all .8s ease-in .5s;
+        }
+        a:hover {
+            width: 500px;
+            color: aquamarine;
+            background-color: rgb(57, 18, 126);
+            box-shadow: rgba(255, 255, 255, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+        img {
+            transition: scale 1s linear;
+        }
+        img:hover {
+            scale: .2;
+
+        }
+    </style>
+</head>
+<body>
+    <section class="hero-section">
+        <div class="container">
+            <div class="grid">
+                <div class="hero-content">
+                    <h1>Best Css course Ever</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam animi facere consequuntur dolorem, nam laudantium iste beatae? Earum, corporis perferendis!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam animi facere consequuntur dolorem, nam laudantium iste beatae? Earum, corporis perferendis!
+                    </p>
+                    <a href="https://www.youtube.com">Listen Now</a>
+                </div>
+                <div class="hero-image">
+                    <figure>
+                        <img src="..//image/Screenshot (164).png" alt="this is an image">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
